@@ -1,0 +1,396 @@
+/*  - ELEMENTOS DA PÁGINA <--- */
+
+/* fixing firefox bug */
+div:after, ol:after, form:after, ul:after, dl:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+/* PÁGINA COMPLETA */
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* AREA DE CONTEÚDO */
+
+.content {
+	width: 100%;
+	background-image: url(../imagens/fundo.png);
+	background-repeat: repeat;
+}
+.container {
+	background: none;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: justify;
+	z-index: 1;
+}
+.quadro_emp {
+	alignment-adjust: central;
+	float: left;
+	width: 295px;
+	height: 350px;
+	border: solid;
+	border-width: 5px;
+	border-color: #999;
+	background-color: #FFF;
+	border-style: double;
+	border-radius: 0px 20px;
+	margin: 13px 10px;
+	padding: 3px;
+}
+/* CABEÇALHO E MENU */
+
+.top {
+	width: 100%;
+	height: 135px;
+	background-image: url(../imagens/header.png);
+	background-repeat: repeat-x;
+}
+.header {
+	height: 135px;
+	background: none;
+}
+.menu {
+	background: none;
+	text-align: center;
+}
+.slipt {
+	height: 15px;
+	background-image: url(../imagens/header2.png);
+	background-repeat: repeat-x;
+}
+/* BANNER */
+
+.banner {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+}
+.banner2 {
+	width: 100%;
+	height: 250px;
+	text-align:right;
+}
+
+.querocomprar {
+	position: relative;
+	top: -40px;
+	left: 800px;
+	z-index: 0;
+	}
+/* RODAPÉ DA PÁGINA */
+
+.footer {
+	text-align: center;
+	padding: 30px 0px 0px 30px;
+	height: 180px;
+	background-image: url(../imagens/footer.png);
+	background-repeat: repeat-x;
+}
+.footer2 {
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto;
+}
+/* FORMULARIOS */
+
+#formulario {
+	background: none;
+}
+#formulario h1 {
+	font: 28px Tahoma, Geneva, sans-serif;
+	color: #33C;
+	font-weight: bold;
+}
+#formulario h2 {
+	font: 20px Tahoma, Geneva, sans-serif;
+	color: #33C;
+	font-weight: bold;
+}
+#formulario form {
+	width: 600px;
+	display: block;
+	background: none;
+}
+#formulario fieldset {
+	border: 0;
+	padding: 0 15px 10px 15px;
+}
+#formulario legend {
+	font: 18px Tahoma, Geneva, sans-serif;
+	text-align: center;
+	color: #33C;
+	font-weight: bold;
+	padding: 5px 0;
+}
+#formulario label {
+	display: block;
+	padding: 3px 0;
+	color: #3399FF;
+}
+#formulario input {
+	padding: 10px;
+	width: 300px;
+	border: 1px solid #33C;
+	font: 16px Tahoma, Geneva, sans-serif;
+	color: #000;
+	margin-top: 15px;
+
+}
+#formulario select {
+	padding: 10px;
+	width: 322px;
+	border: 1px solid #33C;
+	font: 16px Tahoma, Geneva, sans-serif;
+	color: #000;
+	margin-top: 15px
+}
+#formulario textarea {
+	padding: 10px;
+	width: 300px;
+	height: 150px;
+	border: 1px solid #33C;
+	font: 16px Tahoma, Geneva, sans-serif;
+	color: #000;
+	margin-top: 15px;
+}
+#formulario .field {
+	width: 300px;
+}
+#formulario .send {
+	width: 325px;
+	display: block;
+	font-weight: bold;
+	cursor: pointer;
+	border: 0;
+	background: #33C;
+	color: #FFF;
+}
+#formulario .send:hover {
+	background: #39F;
+}
+#formulario .titulos {
+	display: block;
+	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #39F;
+	font-weight: bold;
+}
+#formulario .table {
+	padding: 5px;
+	display: inline;
+	font-weight: bold;
+	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #33C;
+}
+
+/* Botão Documentação no Formulário*/
+
+		.inputFile {
+			height:40px;
+			position: relative;
+			overflow: hidden;		
+			width: 320px;
+			border: 1px solid #33C;
+			font: 16px Tahoma, Geneva, sans-serif;
+			color: #000;
+			margin-top: 15px;
+			background: url("../imagens/documentacao.png") no-repeat scroll 99% 51% #FFFFFF;
+			cursor:pointer;
+		}
+		.inputFile input {
+			position: absolute;
+			right: 0;
+			z-index: 2;
+			font-size: 500px; /* Aumenta tamanho do campo */
+			opacity: 0;
+			filter: alpha(opacity=0);
+			cursor:pointer;
+		}
+		.inputFile span {
+			display: block;
+			position: absolute;
+			color: #999;
+			padding: 5px;
+			letter-spacing: -1px;
+			cursor:pointer;
+		}
+
+
+
+/* Imagem de logo de cada loteamento */
+
+.img_logo_lote{
+	padding: 20px;
+	margin: 0 auto;
+	min-width: 300 px;
+	min-height: 200 px;
+	text-align:center;	
+	}
+
+/* Galeria de Fotos */
+
+#img_container {
+	height: 300px;
+	overflow: auto;
+}
+#img_container ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#img_container ul li {
+	float: left;
+	width: 100px;
+	margin: 10px;
+}
+#img_container ul li a img {
+	width: 93px;
+	height: 93px;
+	border: 1px solid #574331;
+	padding: 5px;
+	background: #eee;
+}
+#img_container ul li a:hover img {
+	border-color: darkred;
+}
+
+#img_container2 {
+	height: 300px;
+}
+#img_container2 ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#img_container2 ul li {
+	float: left;
+	width: 440px;
+	margin: 10px;
+}
+#img_container2 ul li a img {
+	width: 430px;
+	height: 270px;
+	border: 1px solid #574331;
+	padding: 5px;
+	background: #eee;
+}
+#img_container2 ul li a:hover img {
+	border-color: darkred;
+}
+
+/* OUTROS ELEMENTOS */
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: justify;
+	color: #000;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FFF;
+	text-decoration: none;
+	; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+	; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #FC0;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+.end_footer {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18%;
+}
+.end_footer {
+	color: #999;
+	font-size: 80%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.footer .footer2 div {
+	font-size: 70%;
+}
+mene_footer {
+	color: #FFF;
+}
+.footer .footer2 div {
+	color: #FFF;
+}
+.footer .footer2 div h3 {
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+.footer .footer2 div p strong {
+	text-align: center;
+	background: none;
+}
+.titulo {
+	color: #666666;
+	font-weight: bold;
+	font-size: 36px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-stretch: extra-expanded;
+}
+.titulo2 {
+	font-weight: bold;
+	color: #666666;
+	font-size: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.titulo3 {
+	font-weight: bold;
+	color: #333;
+	font-size: 15px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+.titulo4 {
+	color: #666666;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+h1 {
+	font-size: 50px;
+	margin-bottom: 25px;
+	background: none;
+}
+.footer .footer2 div p {
+	text-align: center;
+	font-size: 14px;
+	background: none;
+}
+.footer .footer2 div p {
+	color: #FFF;
+	background: none;
+}
+.content .container .contato p span {
+	font-size: 14px;
+	background: none;
+}
